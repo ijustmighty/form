@@ -4,22 +4,55 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylsheet" href="style.css"></link>
+	<link rel="stylesheet" href="style.css">
 	<title>Form</title>
 </head>
 <body>
-	<form>
-	<label for="pet-select">Выберите город</label>
+	<div class="form">
+		<form>
+		<div class="row">
+		<label for="city-select">Город</label>
+		<select name="city" id="city-select">	
+			<option value=""></option>
+		</select>
+		</div>
+		<div class="row">
+		<label for="dep-select">Цех</label>
 
-<select name="city" id="city-select">
-  <option value="">Город</option>
-  <option value="sev">Севастополь</option>
-  <option value="simf">Симферополь</option>
-  <option value="yal">Ялта</option>
-  <option value="alu">Алушта</option>
-  <option value="djank">Джанкой</option>
-  <option value="evpa">Евпатория</option>
-</select>
-</form>
+		<select name="department" id="dep-select">
+			<option value=""></option>
+		</select>
+
+		</div>
+		<div class="row">
+		<label for="staff-select">Сотрудник</label>
+
+		<select name="staff" id="staff-select">
+			<option value=""></option>
+		</select>
+
+		</div>
+		<div class="row">
+		<label for="team-select">Бригада</label>
+		<select name="team" id="team-select">
+			<option value=""></option>
+			<option value="1st">Первая</option>
+			<option value="2nd">Вторая</option>
+		</select>
+		</div>
+		<div class="row">
+		<label for="shift-select">Смена</label>
+		<select name="shift" id="shift-select">
+			<option value=""></option>
+			<option value="1st">Первая</option>
+			<option value="2nd">Вторая</option>
+		</select>
+		</div>
+		<div class="row">
+		<input type="submit" value="Отправить" class="send">
+		</div>
+		</form>
+	</div>
+<script src="script.js"></script>
 </body>
 </html>
